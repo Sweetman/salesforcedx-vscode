@@ -22,7 +22,7 @@ describe('Log context utilities', () => {
     });
 
     it('Should return array of log lines', () => {
-      const logFilePath = `${process.cwd()}/adaptertest/integration/config/data/apexTest.log`;
+      const logFilePath = `${process.cwd()}/adaptertest/integration/config/logs/variables.log`;
       expect(util.readLogFile(logFilePath)).to.not.be.empty;
     });
 

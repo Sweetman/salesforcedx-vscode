@@ -33,6 +33,7 @@
     "@types/mocha": "2.2.38",
     "@types/node": "^6.0.40",
     "@types/sinon": "^2.3.2",
+    "@types/rimraf": "^2.0.2",
     "chai": "^4.0.2",
     "cross-env": "5.0.4",
     "mocha": "3.2.0",
@@ -60,7 +61,9 @@
     "test":
       "./node_modules/.bin/cross-env VSCODE_NLS_CONFIG={} ./node_modules/.bin/nyc ./node_modules/.bin/_mocha --recursive out/adaptertest --reporter mocha-multi-reporters && node ./node_modules/vscode/bin/test",
     "test:unit":
-      "./node_modules/.bin/cross-env VSCODE_NLS_CONFIG={} ./node_modules/.bin/nyc ./node_modules/.bin/_mocha --recursive out/adaptertest/unit --reporter mocha-multi-reporters"
+      "./node_modules/.bin/cross-env VSCODE_NLS_CONFIG={} ./node_modules/.bin/nyc ./node_modules/.bin/_mocha --recursive out/adaptertest/unit --reporter mocha-multi-reporters",
+    "test:integration":
+      "./node_modules/.bin/cross-env VSCODE_NLS_CONFIG={} ./node_modules/.bin/nyc ./node_modules/.bin/_mocha --recursive out/adaptertest/integration --reporter mocha-multi-reporters"
   },
   "activationEvents": [
     "onDebug",
