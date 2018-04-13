@@ -29,7 +29,6 @@ const CONFIG_DIR = path.join(
   'integration',
   'config'
 );
-const SIMPLE_VARIABLES_DIR = path.join(CONFIG_DIR, 'variables');
 const LOG_FOLDER = path.join(CONFIG_DIR, 'logs');
 const LINE_BREAKPOINT_INFO: LineBreakpointInfo[] = [];
 
