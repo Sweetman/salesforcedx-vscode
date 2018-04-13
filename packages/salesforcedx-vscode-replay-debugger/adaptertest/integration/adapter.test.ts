@@ -54,6 +54,10 @@ describe('Replay debugger adapter - integration', function() {
     myClass2Uri = Uri.file(
       `${projectPath}/force-app/main/default/classes/MyClass2.cls`
     ).toString();
+    if (process.platform === 'win32') {
+      myClass1Uri = myClass1Uri.replace('%3A', ':');
+      myClass2Uri = myClass2Uri.replace('%3A', ':');
+    }
     console.log(`myClass1Uri: ${myClass1Uri}. myClass2Uri: ${myClass2Uri}`);
     LINE_BREAKPOINT_INFO.push(
       {
