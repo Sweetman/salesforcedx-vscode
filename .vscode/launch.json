@@ -404,7 +404,7 @@
       ],
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceRoot}/packages/salesforcedx-apex-debugger/out/**/*.js"
+        "${workspaceRoot}/packages/salesforcedx-vscode-replay-debugger/out/**/*.js"
       ],
       "preLaunchTask": "Compile",
       "internalConsoleOptions": "openOnSessionStart",
